@@ -1,0 +1,11 @@
+.will-show {
+            opacity: 0;
+            transform: translate(0px, 100px);
+            transition:0.5s all;
+        }
+.has-shown {
+            opacity: 1;
+            transform: translate(0px, 0px);
+            transition:0.5s all;
+        }
+

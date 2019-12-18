@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+
+
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/7.6.0/firebase-app.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="https://www.gstatic.com/firebasejs/7.6.0/firebase-database.js"></script>
+    <script>
+        // Your web app's Firebase configuration
+        var firebaseConfig = {
+            apiKey: "AIzaSyBIreZzJd8UVT-S0tbjLM0J3V8ws-BP54c",
+            authDomain: "mingxing-0933365323.firebaseapp.com",
+            databaseURL: "https://mingxing-0933365323.firebaseio.com",
+            projectId: "mingxing-0933365323",
+            storageBucket: "mingxing-0933365323.appspot.com",
+            messagingSenderId: "488452434684",
+            appId: "1:488452434684:web:00ccb3e0367aee2aa7c579"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+
+        //載入database服務
+        var database = firebase.database();
+        console.log(database);
+
+        //利用 set() 設置新資料
+        // firebase.database().ref().set('hi');
+        //batabase 服務僅能放入物件內容不可用陣列
+        var data = {
+            class1: {
+                student1: {
+                    name: 'Nick',
+                    num: 1
+                },
+                student2: {
+                    name: 'Mary',
+                    num: 2
+                }
+
+            },
+            class2: {
+                student1: {
+                    name: 'Nini',
+                    num: 1
+                },
+                student2: {
+                    name: 'Peter',
+                    num: 2
+                }
+            }
+
+        }
+        firebase.database().ref().set(data);
+
+        //利用ref()更改batabase局部內容
+        // firebase.database().ref('class2/student1/name').set('Bob');
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

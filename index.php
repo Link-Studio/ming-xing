@@ -15,11 +15,17 @@
 <body>
 <!--?php include'_GTM.php'; ?-->
 <!-- HTML --> 
+<nav>
+123
+</nav>
+
+
 
     
     
     
     
+
 <!-- JS --> 
 <script type="text/javascript" charset="utf-8" src="js/jquery-3.2.1.min.js"></script>
 <!--<script type="text/javascript" charset="utf-8" src="js/jquery.lazy.min.js"></script> -->
@@ -29,6 +35,7 @@
 <!--<script type="text/javascript" charset="utf-8" src="js/AJAX-example.js"> </script>--> 
 <!--<script type="text/javascript" charset="utf-8" src="js/form-check-function.js"></script>-->
 <!--<script type="text/javascript" charset="utf-8" src="js/will-show.js"></script>-->
+
 </body>
 <script>
 pageView('首頁','index.php')

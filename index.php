@@ -30,4 +30,7 @@
 <!--<script type="text/javascript" charset="utf-8" src="js/form-check-function.js"></script>-->
 <!--<script type="text/javascript" charset="utf-8" src="js/will-show.js"></script>-->
 </body>
+<script>
+pageView('首頁','index.php')
+</script>
 </html>

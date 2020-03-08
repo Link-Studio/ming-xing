@@ -1,5 +1,5 @@
 <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-1312433-22"></script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-119755597-1"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
@@ -8,7 +8,7 @@
   //pageview
   function pageView(title,path){
        console.log(title,path);
-       gtag('config', 'UA-1312433-22', {
+       gtag('config', 'UA-119755597-1', {
         'page_title' : title, /*'網頁標題'*/
         'page_path': path    /*'網頁檔名(例:index.php)'*/
         });

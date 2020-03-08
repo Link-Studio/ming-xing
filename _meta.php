@@ -4,7 +4,7 @@
 <!-- SEO 一般瀏覽器用 -->
 <title>楠堂文藝工作室</title>
 <meta name="title" content="楠堂文藝工作室">
-<meta name="keywords"  content="楠堂文藝工作室,篆刻,手工印章,手作印章,修復,裝裱,書畫,書法,國畫,水墨">
+<meta name="keywords"  content="楠堂文藝工作室,篆刻,手工印章,手作印章,修復,裝裱,書畫,書法,國畫,水墨,手工框">
 <meta name="description" content="描述文案200字以內" >
 <meta name="author" content="China-motor-IT-team">
 

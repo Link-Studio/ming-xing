@@ -2,7 +2,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
 <!-- SEO 一般瀏覽器用 -->
-<title>明行</title>
+<title>楠堂文藝工作室</title>
 <meta name="title" content="明行">
 <meta name="keywords"  content="明行,篆刻,手工印章,手作印章,修復,裝裱,書畫,書法,國畫,水墨">
 <meta name="description" content="描述文案200字以內" >

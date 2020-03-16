@@ -28,4 +28,4 @@
 <meta name="twitter:creator" content="China-motor-IT-team">
 
 <!-- 瀏覽器icon -->
-<link rel="icon" href="mitsubishi.ico" sizes="32x32 48x48" type="image/vnd.microsoft.icon">
+<link rel="icon" href="nang.ico" sizes="32x32 48x48" type="image/vnd.microsoft.icon">

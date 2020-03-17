@@ -56,6 +56,11 @@
     });
 
     massaging.onMessage(function(payload){
+      var obj=JSON.parse(payload.data.notification);
+      var notification=new Notification (obj.title,{
+        icon:obj.icon,
+        body:obj.body
+      });
 
     });
     </script>

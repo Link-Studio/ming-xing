@@ -37,33 +37,27 @@
     const messaging = firebase.messaging();
     messaging.usePublicVapidKey(
         "BMn8SxvdaxEaK45f0bx_e3Uu0KASQsUuLGIf4W_AuT7mA37qiGFgEESyfhDmkCgBTCuDALAuVVinETKfyAYgS4s");
-    
-    messaging.requestPermission().then(function(){
-      console.log('USER允許通知');
 
+    messaging.requestPermission().then(function() {
+        console.log('USER允許通知');
 
-    }).catch((err) => {
+        messaging.getToken().then(function(currentToken) {
+            document.getElementById('token').innerHTML = currentToken;
+            console.log(currentToken);
+        }).catch(function(err) {
+            console.log('An error occurred while retrieving token. ', err);
+            showToken('Error retrieving Instance ID token. ', err);
+            setTokenSentToServer(false);
+        });
+
+    }).catch(function(err) {
         console.log('不允許通知', err);
-        
+
     });
 
+    massaging.onMessage(function(payload)){
 
-    // messaging.getToken().then((currentToken) => {
-    //     if (currentToken) {
-    //         sendTokenToServer(currentToken);
-    //         updateUIForPushEnabled(currentToken);
-    //     } else {
-    //         // Show permission request.
-    //         console.log('No Instance ID token available. Request permission to generate one.');
-    //         // Show permission UI.
-    //         updateUIForPushPermissionRequired();
-    //         setTokenSentToServer(false);
-    //     }
-    // }).catch((err) => {
-    //     console.log('An error occurred while retrieving token. ', err);
-    //     showToken('Error retrieving Instance ID token. ', err);
-    //     setTokenSentToServer(false);
-    // });
+    });
     </script>
 
 

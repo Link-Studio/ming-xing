@@ -14,7 +14,7 @@
 
     <!-- TODO: Add SDKs for Firebase products that you want to use
      https://firebase.google.com/docs/web/setup#available-libraries -->
-     <script src="https://www.gstatic.com/firebasejs/7.11.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.11.0/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/7.11.0/firebase-analytics.js"></script>
     <script src="https://www.gstatic.com/firebasejs/7.11.0/firebase-messaging.js"></script>
 
@@ -37,22 +37,33 @@
     const messaging = firebase.messaging();
     messaging.usePublicVapidKey(
         "BMn8SxvdaxEaK45f0bx_e3Uu0KASQsUuLGIf4W_AuT7mA37qiGFgEESyfhDmkCgBTCuDALAuVVinETKfyAYgS4s");
-    messaging.getToken().then((currentToken) => {
-        if (currentToken) {
-            sendTokenToServer(currentToken);
-            updateUIForPushEnabled(currentToken);
-        } else {
-            // Show permission request.
-            console.log('No Instance ID token available. Request permission to generate one.');
-            // Show permission UI.
-            updateUIForPushPermissionRequired();
-            setTokenSentToServer(false);
-        }
+    
+    messaging.requestPermission().then(function(){
+      console.log('USER允許通知');
+
+
     }).catch((err) => {
-        console.log('An error occurred while retrieving token. ', err);
-        showToken('Error retrieving Instance ID token. ', err);
-        setTokenSentToServer(false);
+        console.log('不允許通知', err);
+        
     });
+
+
+    // messaging.getToken().then((currentToken) => {
+    //     if (currentToken) {
+    //         sendTokenToServer(currentToken);
+    //         updateUIForPushEnabled(currentToken);
+    //     } else {
+    //         // Show permission request.
+    //         console.log('No Instance ID token available. Request permission to generate one.');
+    //         // Show permission UI.
+    //         updateUIForPushPermissionRequired();
+    //         setTokenSentToServer(false);
+    //     }
+    // }).catch((err) => {
+    //     console.log('An error occurred while retrieving token. ', err);
+    //     showToken('Error retrieving Instance ID token. ', err);
+    //     setTokenSentToServer(false);
+    // });
     </script>
 
 

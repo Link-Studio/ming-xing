@@ -7,7 +7,16 @@ importScripts('https://www.gstatic.com/firebasejs/7.11.0/firebase-app.js');
 importScripts('https://www.gstatic.com/firebasejs/7.11.0/firebase-messaging.js');
 
 
-
+const firebaseConfig = {
+  apiKey: "AIzaSyDR_imo_uCFzs5330KV0akwzHJQs1KQdTk",
+  authDomain: "nan-tang.firebaseapp.com",
+  databaseURL: "https://nan-tang.firebaseio.com",
+  projectId: "nan-tang",
+  storageBucket: "nan-tang.appspot.com",
+  messagingSenderId: "1040953994238",
+  appId: "1:1040953994238:web:ca17fa42f73c464b946eaf",
+  measurementId: "G-2EVFE0KPRX"
+};
 // Initialize the Firebase app in the service worker by passing in the
 // messagingSenderId.
 firebase.initializeApp({

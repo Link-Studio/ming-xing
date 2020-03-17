@@ -55,7 +55,7 @@
 
     });
 
-    massaging.onMessage(function(payload)){
+    massaging.onMessage(function(payload){
 
     });
     </script>

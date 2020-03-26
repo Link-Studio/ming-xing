@@ -22,13 +22,13 @@
     // Your web app's Firebase configuration
     var firebaseConfig = {
         apiKey: "AIzaSyDR_imo_uCFzs5330KV0akwzHJQs1KQdTk",
-  authDomain: "nan-tang.firebaseapp.com",
-  databaseURL: "https://nan-tang.firebaseio.com",
-  projectId: "nan-tang",
-  storageBucket: "nan-tang.appspot.com",
-  messagingSenderId: "1040953994238",
-  appId: "1:1040953994238:web:1634ccf4d94c64f0946eaf",
-  measurementId: "G-NRX04GDSC0"
+        authDomain: "nan-tang.firebaseapp.com",
+        databaseURL: "https://nan-tang.firebaseio.com",
+        projectId: "nan-tang",
+        storageBucket: "nan-tang.appspot.com",
+        messagingSenderId: "1040953994238",
+        appId: "1:1040953994238:web:1634ccf4d94c64f0946eaf",
+        measurementId: "G-NRX04GDSC0"
     };
     // Initialize Firebase
     firebase.initializeApp(firebaseConfig);
@@ -55,12 +55,12 @@
 
     });
 
-    messaging.onMessage(function(payload){
-      var obj=JSON.parse(payload.data.notification);
-      var notification=new Notification (obj.title,{
-        icon:obj.icon,
-        body:obj.body
-      });
+    messaging.onMessage(function(payload) {
+        var obj = JSON.parse(payload.data.notification);
+        var notification = new Notification(obj.title, {
+            icon: obj.icon,
+            body: obj.body
+        });
 
 
     });

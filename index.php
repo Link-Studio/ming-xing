@@ -19,9 +19,7 @@
 <?php include'./layout/N0001.php'; ?>
 <!--?php include'_GTM.php'; ?-->
 <!-- HTML --> 
-<nav class="">
-楠堂文藝工作室!!
-</nav>
+
 
 
 

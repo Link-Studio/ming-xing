@@ -3,24 +3,19 @@
     /* CSS Document */
     
     #N0001 {
-        height: 100px;
+        height: 70px;
     }
     
     #N0001 .logo-bg {
-        height: 100px;
-        width: 260px
+        height: 70px;
+        width: 350px
     }
     
     #N0001 .logo {
-        top: 10px;
-        left: 5px;
+        top: 0px;
+        left: 0px;
     }
     
-    #N0001 .cmtc {
-        top: 35px;
-        left: 90px;
-        font-size: 20px;
-    }
     
     #N0001 .mobile-menu,
     #N0001 .mobile-close {
@@ -127,12 +122,9 @@
         <a class="position-absolute logo" href="#" target="_blank">
             <img src="images/N0001_logo.png" alt="楠堂文藝工作室">
         </a>
-        <div class="position-absolute cmtc">
-            <p>楠堂文藝工作室</p>
-        </div>
     </div>
     <!--行動版開啟/關閉選單-->
-    <a class="position-absolute d-lg-none mobile-menu show" href="#">
+    <!-- <a class="position-absolute d-lg-none mobile-menu show" href="#">
         <img src="images/N0001_mobile_menu.png" alt="開啟選單">
     </a>
     <a class="position-absolute d-none mobile-close" href="#">
@@ -160,7 +152,7 @@
         <a href="#" class="item divide">
             <div class="p-3 p-lg-1 text-center">選單G<br><small>GGGGGGGGG</small></div>
         </a>
-    </div>
+    </div> -->
 </nav>
 
 <script>

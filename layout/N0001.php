@@ -7,8 +7,8 @@
     }
     
     #N0001 .logo-bg {
-        height: 70px;
-        width: 350px
+        height: 40px;
+        width: 260px
     }
     
     #N0001 .logo {

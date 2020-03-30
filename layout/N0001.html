@@ -64,13 +64,9 @@
             background-color: #000000;
             border-bottom: 1px #333333 solid;
             color: #ffffff;
-            line-height: .8em;
+            height: 40px;
+            line-height: 40px;
             font-size: 18px;
-        }
-        
-        #N0001 small {
-            font-size: 10px;
-            color: #ffffff;
         }
         
         #N0001 .nav .item:hover,
@@ -89,17 +85,34 @@
             background-color: #000000;
         }
         
+        #N0001 .icon-nav {
+            display: block;
+        }
+        
         @media screen and (min-width: 992px) {
             #N0001 .nav {
-                top: 20px;
+                top: 15px;
                 left: 270px;
                 opacity: 1;
-                width: calc(100vw - 270px - 100px);
+                width: calc(100vw - 270px - 10px);
             }
             #N0001 .nav .item {
-                width: 100px;
+                /* text-align: center; */
+                font-size: 15px;
+                width: 90px;
                 border-bottom: 1px solid transparent;
                 color: #ffffff;
+            }
+            #N0001 .nav .icon-item {
+                width: 40px;
+            }
+            #N0001 .nav .icon-item img {
+                opacity: 0.8;
+            }
+            #N0001 .nav .item p {
+                width: 90px;
+                opacity: 0.8;
+                text-align: center;
             }
             #N0001 .nav:before {
                 content: '';
@@ -113,16 +126,16 @@
                 width: 1px;
                 background-color: #ffffff;
             }
-            #N0001 .nav .item:hover,
-            #N0001 .nav .item.active {
-                border-bottom: 2px solid #17C8FF;
+            #N0001 .nav .divide:nth-child(1):after {
+                background-color: transparent;
             }
-            #N0001 .nav .item:hover,
-            #N0001 .nav .item:hover small,
-            #N0001 .nav .item.active,
-            #N0001 .nav .item.active small {
-                color: #17C8FF;
-                transition: all 1s;
+            #N0001 .nav .item p:hover,
+            #N0001 .nav .icon-item img:hover {
+                /* border-bottom: 2px solid #17C8FF; */
+                /* color: #17C8FF; */
+                transform: scale(1.1);
+                opacity: 1;
+                transition: all 0.3s;
             }
         }
     </style>
@@ -142,28 +155,63 @@
                 <img src="../images/N0001_mobile_close.png" alt="關閉選單">
             </a>
             <div class="position-absolute d-lg-flex justify-content-end nav ">
-                <a href="#" class="item">
-                    <div class="p-2 p-lg-1 text-center">裝裱<br><small>Frame</small></div>
+                <a href="#" class="item divide">
+                    <div class="d-flex">
+                        <img src="../images/N0001_icon_1.png" alt="" class="d-none ml-3  ml-lg-0">
+                        <p class="ml-3 ml-lg-0 mb-0 align-self-center">裝裱</p>
+                    </div>
                 </a>
                 <a href="#" class="item divide">
-                    <div class="p-2 p-lg-1 text-center">書畫<br><small>Ink Painting</small></div>
+                    <div class="d-flex">
+                        <img src="../images/N0001_icon_1.png" alt="" class="d-none ml-3  ml-lg-0">
+                        <p class="ml-3 ml-lg-0 mb-0 align-self-center">書畫</p>
+                    </div>
                 </a>
                 <a href="#" class="item divide">
-                    <div class="p-2 p-lg-1 text-center">篆刻<br><small>Chinese Seal</small></div>
+                    <div class="d-flex">
+                        <img src="../images/N0001_icon_1.png" alt="" class="d-none ml-3  ml-lg-0">
+                        <p class="ml-3 ml-lg-0 mb-0 align-self-center">篆刻</p>
+                    </div>
                 </a>
                 <a href="#" class="item divide">
-                    <div class="p-2 p-lg-1 text-center">工作紀錄<br><small>Blog</small></div>
+                    <div class="d-flex">
+                        <img src="../images/N0001_icon_1.png" alt="" class="d-none ml-3  ml-lg-0">
+                        <p class="ml-3 ml-lg-0 mb-0 align-self-center">工作紀錄</p>
+                    </div>
                 </a>
                 <!-- <a href="#" class="item divide">
-                    <div class="p-2 p-lg-1 text-center">選單E<br><small>EEEEEEEEE</small></div>
-                </a>
-                <a href="#" class="item divide">
-                    <div class="p-2 p-lg-1 text-center">選單F<br><small>FFFFFFFFF</small></div>
-                </a>
-                <a href="#" class="item divide">
-                    <div class="p-2 p-lg-1 text-center">選單G<br><small>GGGGGGGGG</small></div>
+                    <div class="d-flex">
+                        <img src="../images/N0001_icon_1.png" alt="" class="d-none ml-3  ml-lg-0">
+                        <p class="ml-3 ml-lg-0 mb-0 align-self-center">選單E</p>
+                    </div>
                 </a> -->
+                <!-- <a href="#" class="item divide">
+                    <div class="d-flex">
+                        <img src="../images/N0001_icon_1.png" alt="" class="d-none ml-3  ml-lg-0">
+                        <p class="ml-3 ml-lg-0 mb-0 align-self-center">選單F</p>
+                    </div>
+                </a> -->
+                <a href="#" class="item icon-item">
+                    <div class="d-flex">
+                        <img src="../images/N0001_icon_1.png" alt="" class="ml-3 ml-lg-0">
+                        <p class="ml-3 ml-lg-0 mb-0 align-self-center d-lg-none">會員專區</p>
+                    </div>
+                </a>
+                <a href="#" class="item icon-item">
+                    <div class="d-flex">
+                        <img src="../images/N0001_icon_2.png" alt="" class="ml-3 ml-lg-0">
+                        <p class="ml-3 ml-lg-0 mb-0 align-self-center d-lg-none">購物車</p>
+                    </div>
+                </a>
+                <!-- <a href="#" class="item icon-item">
+                    <div class="d-flex">
+                        <img src="../images/N0001_icon_3.png" alt="" class="ml-3 ml-lg-0">
+                        <p class="ml-3 ml-lg-0 mb-0 align-self-center d-lg-none">選單I</p>
+                    </div>
+                </a> -->
+
             </div>
+
         </nav>
 
 
@@ -175,11 +223,11 @@
             $(document).ready(function() {
 
                 //992px以上的選單按下效果
-                $('#N0001 .nav .item').click(function(e) {
-                    e.preventDefault();
-                    $("#N0001 .nav .item").removeClass('active');
-                    $(this).addClass('active');
-                });
+                // $('#N0001 .nav .item').click(function(e) {
+                //     e.preventDefault();
+                //     $("#N0001 .nav .item").removeClass('active');
+                //     $(this).addClass('active');
+                // });
                 //991px以下的選單互動控制
 
 

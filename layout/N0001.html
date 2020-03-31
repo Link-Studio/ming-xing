@@ -46,17 +46,17 @@
         
         #N0001 .nav {
             width: 100vw;
-            top: 70px;
-            left: -1000px;
+            top: -500px;
+            left: 0px;
             opacity: 0;
-            transition: all 0.5s cubic-bezier(.1, .89, .37, 1);
+            transition: all 0.5s ease-in;
         }
         
         #N0001 .nav.show {
             top: 70px;
             left: 0px;
             opacity: 1;
-            transition: all 0.5s cubic-bezier(.1, .89, .37, 1);
+            transition: all 0.5s ease-out;
         }
         
         #N0001 .nav .item {
@@ -143,70 +143,70 @@
     <body>
         <nav id="N0001" class="fixed-top ">
             <div class="position-absolute logo-bg ">
-                <a class="position-absolute logo" href="#" target="_blank">
-                    <img src="../images/N0001_logo.png" alt="楠堂文藝工作室">
+                <a class="position-absolute logo" href="#">
+                    <img src="../images/N0001/N0001_logo.png" alt="楠堂文藝工作室">
                 </a>
             </div>
             <!--行動版開啟/關閉選單-->
             <a class="position-absolute d-lg-none mobile-menu show" href="#">
-                <img src="../images/N0001_mobile_menu.png" alt="開啟選單">
+                <img src="../images/N0001/N0001_mobile_menu.png" alt="開啟選單">
             </a>
             <a class="position-absolute d-none mobile-close" href="#">
-                <img src="../images/N0001_mobile_close.png" alt="關閉選單">
+                <img src="../images/N0001/N0001_mobile_close.png" alt="關閉選單">
             </a>
             <div class="position-absolute d-lg-flex justify-content-end nav ">
                 <a href="#" class="item divide">
                     <div class="d-flex">
-                        <img src="../images/N0001_icon_1.png" alt="" class="d-none ml-3  ml-lg-0">
-                        <p class="ml-3 ml-lg-0 mb-0 align-self-center">裝裱</p>
+                        <!-- <img src="../images/N0001/N0001_icon_1.png" alt="" class="d-none ml-3  ml-lg-0"> -->
+                        <p class="ml-3 ml-lg-0 mb-0 align-self-center">裝 裱</p>
                     </div>
                 </a>
                 <a href="#" class="item divide">
                     <div class="d-flex">
-                        <img src="../images/N0001_icon_1.png" alt="" class="d-none ml-3  ml-lg-0">
-                        <p class="ml-3 ml-lg-0 mb-0 align-self-center">書畫</p>
+                        <!-- <img src="../images/N0001/N0001_icon_1.png" alt="" class="d-none ml-3  ml-lg-0"> -->
+                        <p class="ml-3 ml-lg-0 mb-0 align-self-center">書 畫</p>
                     </div>
                 </a>
                 <a href="#" class="item divide">
                     <div class="d-flex">
-                        <img src="../images/N0001_icon_1.png" alt="" class="d-none ml-3  ml-lg-0">
-                        <p class="ml-3 ml-lg-0 mb-0 align-self-center">篆刻</p>
+                        <!-- <img src="../images/N0001/N0001_icon_1.png" alt="" class="d-none ml-3  ml-lg-0"> -->
+                        <p class="ml-3 ml-lg-0 mb-0 align-self-center">篆 刻</p>
                     </div>
                 </a>
                 <a href="#" class="item divide">
                     <div class="d-flex">
-                        <img src="../images/N0001_icon_1.png" alt="" class="d-none ml-3  ml-lg-0">
-                        <p class="ml-3 ml-lg-0 mb-0 align-self-center">工作紀錄</p>
+                        <!-- <img src="../images/N0001/N0001_icon_1.png" alt="" class="d-none ml-3  ml-lg-0"> -->
+                        <p class="ml-3 ml-lg-0 mb-0 align-self-center">BLOG</p>
                     </div>
                 </a>
                 <!-- <a href="#" class="item divide">
                     <div class="d-flex">
-                        <img src="../images/N0001_icon_1.png" alt="" class="d-none ml-3  ml-lg-0">
+                        <img src="../images/N0001/N0001_icon_1.png" alt="" class="d-none ml-3  ml-lg-0">
                         <p class="ml-3 ml-lg-0 mb-0 align-self-center">選單E</p>
                     </div>
                 </a> -->
                 <!-- <a href="#" class="item divide">
                     <div class="d-flex">
-                        <img src="../images/N0001_icon_1.png" alt="" class="d-none ml-3  ml-lg-0">
+                        <img src="../images/N0001/N0001_icon_1.png" alt="" class="d-none ml-3  ml-lg-0">
                         <p class="ml-3 ml-lg-0 mb-0 align-self-center">選單F</p>
                     </div>
                 </a> -->
                 <a href="#" class="item icon-item">
                     <div class="d-flex">
-                        <img src="../images/N0001_icon_1.png" alt="" class="ml-3 ml-lg-0">
-                        <p class="ml-3 ml-lg-0 mb-0 align-self-center d-lg-none">會員專區</p>
+                        <img src="../images/N0001/N0001_icon_1.png" alt="" class="ml-3 ml-lg-0">
+                        <p class="ml-2 ml-lg-0 mb-0 align-self-center d-lg-none">會員專區</p>
                     </div>
                 </a>
                 <a href="#" class="item icon-item">
                     <div class="d-flex">
-                        <img src="../images/N0001_icon_2.png" alt="" class="ml-3 ml-lg-0">
-                        <p class="ml-3 ml-lg-0 mb-0 align-self-center d-lg-none">購物車</p>
+                        <img src="../images/N0001/N0001_icon_2.png" alt="" class="ml-3 ml-lg-0">
+                        <p class="ml-2 ml-lg-0 mb-0 align-self-center d-lg-none">購物車</p>
                     </div>
                 </a>
                 <!-- <a href="#" class="item icon-item">
                     <div class="d-flex">
-                        <img src="../images/N0001_icon_3.png" alt="" class="ml-3 ml-lg-0">
-                        <p class="ml-3 ml-lg-0 mb-0 align-self-center d-lg-none">選單I</p>
+                        <img src="../images/N0001/N0001_icon_3.png" alt="" class="ml-3 ml-lg-0">
+                        <p class="ml-2 ml-lg-0 mb-0 align-self-center d-lg-none">選單I</p>
                     </div>
                 </a> -->
 
@@ -239,7 +239,6 @@
                     $("#N0001 .nav").addClass("show");
 
                     setTimeout(function() {
-
                         $('#N0001 .mobile-close').addClass("show");
                     }, 300);
                 });

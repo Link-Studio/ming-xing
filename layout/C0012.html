@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+<head>
+
+    <title>C0012</title>
+    <link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="../css/slick.css">
+    <link rel="stylesheet" type="text/css" href="../css/slick-theme.css">
+    <link rel="stylesheet" type="text/css" href="../css/animate.min.css">
+    <link rel="stylesheet" type="text/css" href="../css/will-show.min.css">
+    <style>
+        #C0012 .col-6 img:hover {
+            cursor: pointer;
+            opacity: 0.8;
+        }
+        
+        #C0012 article {
+            position: absolute;
+            bottom: 10px;
+            left: 10px;
+            right: 10px;
+        }
+        
+        @media screen and (min-width: 992px) {}
+    </style>
+
+
+    <body>
+
+        <section id="C0012">
+            <div class="d-flex flex-column flex-lg-row no-gutter">
+                <div class="col-12 col-lg-6 p-0 position-relative">
+                    <img src="../images/C0012/img_01.png" alt="" class="img-fluid">
+                    <article>
+                        <h5 class="text-white">TITLE</h5>
+                        <p class="text-white">Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
+                    </article>
+
+                </div>
+                <div class="col-12 col-lg-6 p-0">
+                    <div class="col-12 p-0 d-flex">
+                        <div class="col-6 p-0">
+                            <img src="../images/C0012/img_02.png" alt="" class="img-fluid">
+                            <h5 class="d-none">TITLE2</h5>
+                            <p class="d-none">Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
+                        </div>
+                        <div class="col-6 p-0">
+                            <img src="../images/C0012/img_03.png" alt="" class="img-fluid">
+                            <h5 class="d-none">TITLE3</h5>
+                            <p class="d-none">Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
+                        </div>
+                    </div>
+                    <div class="col-12 p-0 d-flex">
+                        <div class="col-6 p-0">
+                            <img src="../images/C0012/img_05.png" alt="" class="img-fluid">
+                            <h5 class="d-none">TITLE4</h5>
+                            <p class="d-none">Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
+                        </div>
+                        <div class="col-6 p-0">
+                            <img src="../images/C0012/img_04.png" alt="" class="img-fluid">
+                            <h5 class="d-none">TITLE5</h5>
+                            <p class="d-none">Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
+                        </div>
+                    </div>
+
+                </div>
+
+
+            </div>
+
+
+
+        </section>
+
+
+
+
+
+
+
+
+        <script type="text/javascript" charset="utf-8" src="../js/jquery-3.2.1.min.js"></script>
+        <script type="text/javascript" charset="utf-8" src="../js/jquery.lazy.min.js"></script>
+        <script type="text/javascript" charset="utf-8" src="../js/getUrlPara.js"></script>
+        <script type="text/javascript" charset="utf-8" src="../js/bootstrap.bundle.min.js"></script>
+        <script type="text/javascript" charset="utf-8" src="../js/slick.min.js"></script>
+        <script type="text/javascript" charset="utf-8" src="../js/AJAX-example.js">
+        </script>
+        <script type="text/javascript" charset="utf-8" src="../js/form-check-function.js"></script>
+        <script type="text/javascript" charset="utf-8" src="../js/will-show.js"></script>
+
+        <script>
+            function scrollToElement(selector, time, verticalOffset) {
+                time = typeof(time) != 'undefined' ? time : 500;
+                verticalOffset = typeof(verticalOffset) != 'undefined' ? verticalOffset : 0;
+                element = $(selector);
+                offset = element.offset();
+                offsetTop = offset.top + verticalOffset;
+                $('html, body').animate({
+                    scrollTop: offsetTop
+                }, time);
+            }
+
+
+            $(document).ready(function() {
+                $('#C0012 .col-6 img').on('click', function() {
+                    let selectImg = $(this).attr('src');
+                    let selectTitle = $(this).siblings('h5').text();
+                    let selectP = $(this).siblings('p').text();
+                    // console.log(selectImg, selectTitle, selectP);
+                    let showImg = $('#C0012 .position-relative').children('img').attr('src');
+                    let showTitle = $('#C0012 article').children('h5').text();
+                    let showP = $('#C0012 article').children('p').text();
+                    // console.log(showImg, showH3, showP);
+
+                    $('#C0012 .position-relative').children('img').attr('src', selectImg);
+                    $('#C0012 article').children('h5').text(selectTitle);
+                    $('#C0012 article').children('p').text(selectP);
+                    $(this).attr('src', showImg);
+                    $(this).siblings('h5').text(showTitle);
+                    $(this).siblings('p').text(showP);
+                    // iE125trackEvent('圖片-第三區塊-點擊按鈕', 'click', selectH3, 0);
+                    if ($(window).width() < 992) {
+                        scrollToElement('#C0012', 350, 0);
+                    }
+                });
+            });
+        </script>
+    </body>
+
+    </html>

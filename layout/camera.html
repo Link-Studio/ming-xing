@@ -20,7 +20,8 @@
             let constraints = {
                 video: {
                     width: 500,
-                    height: 500
+                    height: 500,
+                    facingMode: "environment"
                 },
                 audio: false
             };
@@ -34,7 +35,7 @@
             */
             let promise = navigator.mediaDevices.getUserMedia(constraints);
             promise.then(function(MediaStream) {
-                    alert(MediaStream);
+                    alert(MediaStream[0]);
                     video.srcObject = MediaStream;
                     video.play();
 

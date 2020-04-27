@@ -35,4 +35,11 @@ $(document).ready(function() {
             $('#N0001 .mobile-close').removeClass("show");
         }, 300);
     });
+
+
+
+    $('#C0001').slick({
+        lazyLoad: 'ondemand',
+        dots: true
+    });
 });

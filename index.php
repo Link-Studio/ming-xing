@@ -97,26 +97,50 @@
 
 
 
-            <img src="../images/C0002/banner_pc_01.png" alt="" class="d-none d-lg-block img-fluid">
-            <img src="../images/C0002/banner_mobile_01.png" alt="" class="d-block d-lg-none img-fluid">
-            <article>
-                <h3>精緻裝裱</h3>
-                <div>楠堂文藝工作室提供的裝裱服務有別於市面上的裝裱服務，以純手工的精緻裝裱服務為主，
-                    項目包含立軸、手卷、冊頁、手工框、小托...等服務。內容涵蓋無酸處理、修復、砑光、傳統醬糊、絹染...等多個複雜工序。
-                </div>
+        <img src="../images/C0002/banner_pc_01.png" alt="" class="d-none d-lg-block img-fluid">
+        <img src="../images/C0002/banner_mobile_01.png" alt="" class="d-block d-lg-none img-fluid">
+        <article>
+            <h3>裝裱</h3>
+            <div>楠堂文藝工作室提供的裝裱服務有別於市面上的裝裱服務，以純手工的精緻裝裱服務為主，
+                項目包含立軸、手卷、冊頁、手工框、小托...等服務。內容涵蓋無酸處理、修復、砑光、傳統醬糊、絹染...等多個複雜工序。
+            </div>
 
-                <div class="d-flex mt-2">
-                    <a href="#" target="_blank" class="">了解更多</a>
-                    <!-- <a href="#" target="_self" class="ml-5">加入購物車</a> -->
-                    <!-- <a href="#" target="_self" class="ml-5">了解更多</a> -->
-                </div>
-            </article>
-
-
+            <div class="d-flex mt-2">
+                <a href="#" target="_self" class="">了解更多</a>
+                <!-- <a href="#" target="_self" class="ml-5">加入購物車</a> -->
+                <!-- <a href="#" target="_self" class="ml-5">了解更多</a> -->
+            </div>
+        </article>
 
 
 
-        </section>
+
+
+    </section>
+    <section id="C0006" class="mb-0">
+
+
+
+        <img src="../images/C0006/banner_pc_01.jpg" alt="" class="d-none d-lg-block img-fluid">
+        <img src="../images/C0006/banner_mobile_01.jpg" alt="" class="d-block d-lg-none img-fluid">
+        <article>
+            <h3>篆刻</h3>
+            <div>楠堂文藝工作室提供的篆刻服務，以手工印章，媒材以石材為主。純手工的雕刻，獨一無二。
+                項目包含肖形印、閒章、藏書章、訂製印章，內容涵蓋排印、拓印、打磨、篆刻、邊款、錦盒包裝...等多項複雜工序。                
+            </div>
+
+            <div class="d-flex mt-2">
+                <a href="#" target="_self" class="">了解更多</a>
+                <!-- <a href="#" target="_self" class="ml-5">加入購物車</a>
+                <a href="#" target="_self" class="ml-5">了解更多</a> -->
+            </div>
+        </article>
+
+
+
+
+
+    </section>
 
 
 

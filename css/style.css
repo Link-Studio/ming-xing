@@ -171,3 +171,49 @@
         font-size: 0.8em;
     }
 }
+
+#C0006 {
+    position: relative;
+}
+
+#C0006 article {
+    position: absolute;
+    left: 2%;
+    bottom: 3%;
+    width: 96%;
+    color: #333333
+}
+
+#C0006 article div {
+    font-size: 0.9em;
+}
+
+#C0006 .d-flex a {
+    color: #333333;
+    text-decoration: none;
+}
+
+#C0006 .d-flex a:hover {
+    opacity: 0.85;
+}
+
+#C0006 .d-flex a::after {
+    content: '〉';
+}
+
+@media screen and (min-width: 992px) {
+    #C0006 article {
+        position: absolute;
+        right: 19.5%;
+        top: 30%;
+        left: inherit;
+        bottom: inherit;
+        width: 33%;
+        min-width: 400px;
+        overflow: hidden;
+        color: #333333
+    }
+    #C0006 article div {
+        font-size: 0.8em;
+    }
+}

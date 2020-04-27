@@ -18,7 +18,7 @@
 </head>
 <body>
 <!-- HTML --> 
-<?php include'./layout/nav.html'; ?>
+<?php include'./inc/nav.html'; ?>
 
 
 <section id="C0001">

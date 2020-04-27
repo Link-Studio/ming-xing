@@ -23,7 +23,7 @@
     <?php include'./inc/nav.html'; ?>
 
 
-    <section id="C0001" style="margin-top:70px">
+    <!-- <section id="C0001" style="margin-top:70px">
         <div>
             <a href="#" target="_self">
                 <img data-lazy="./images/C0001/banner_pc_01.png" alt="" class="d-none d-lg-block img-fluid">
@@ -91,7 +91,30 @@
             </a>
         </div>
 
-    </section>
+    </section> -->
+
+    <section id="C0002" class="mb-0">
+
+
+
+            <img src="../images/C0002/banner_pc_01.png" alt="" class="d-none d-lg-block img-fluid">
+            <img src="../images/C0002/banner_mobile_01.png" alt="" class="d-block d-lg-none img-fluid">
+            <article>
+                <h3>精緻裝裱</h3>
+                <div>楠堂提供純手工的精緻裝裱服務，包含卷軸、手卷、手工框、無酸處理、修復...等服務。</div>
+
+                <div class="d-flex mt-2">
+                    <a href="#" target="_blank" class="">了解更多</a>
+                    <!-- <a href="#" target="_self" class="ml-5">加入購物車</a> -->
+                    <!-- <a href="#" target="_self" class="ml-5">了解更多</a> -->
+                </div>
+            </article>
+
+
+
+
+
+        </section>
 
 
 

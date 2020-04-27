@@ -126,3 +126,48 @@
         transition: all 0.3s;
     }
 }
+
+#C0002 {
+    position: relative;
+}
+
+#C0002 article {
+    position: absolute;
+    left: 2%;
+    bottom: 3%;
+    width: 96%;
+    color: #ffffff
+}
+
+#C0002 article div {
+    font-size: 0.9em;
+}
+
+#C0002 .d-flex a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+#C0002 .d-flex a:hover {
+    opacity: 0.85;
+}
+
+#C0002 .d-flex a::after {
+    content: '〉';
+}
+
+@media screen and (min-width: 992px) {
+    #C0002 article {
+        position: absolute;
+        left: 19.5%;
+        top: 30%;
+        bottom: inherit;
+        width: 33%;
+        min-width: 400px;
+        overflow: hidden;
+        color: #ffffff
+    }
+    #C0002 article div {
+        font-size: 0.8em;
+    }
+}

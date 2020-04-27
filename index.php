@@ -40,6 +40,6 @@
 
 </body>
 <script>
-pageView('首頁2','index2.php')
+pageView('首頁','index.php')
 </script>
 </html>

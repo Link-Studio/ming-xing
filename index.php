@@ -101,7 +101,9 @@
             <img src="../images/C0002/banner_mobile_01.png" alt="" class="d-block d-lg-none img-fluid">
             <article>
                 <h3>精緻裝裱</h3>
-                <div>楠堂提供純手工的精緻裝裱服務，包含卷軸、手卷、手工框、無酸處理、修復...等服務。</div>
+                <div>楠堂文藝工作室提供的裝裱服務有別於市面上的裝裱服務，以純手工的精緻裝裱服務為主，
+                    項目包含立軸、手卷、冊頁、手工框、小托...等服務。內容涵蓋無酸處理、修復、砑光、傳統醬糊、絹染...等多個複雜工序。
+                </div>
 
                 <div class="d-flex mt-2">
                     <a href="#" target="_blank" class="">了解更多</a>

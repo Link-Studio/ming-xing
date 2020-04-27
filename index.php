@@ -10,7 +10,8 @@
 <!--<link rel="stylesheet" type="text/css" href="css/slick.css">-->
 <!--<link rel="stylesheet" type="text/css" href="css/slick-theme.css">-->
 <!--<link rel="stylesheet" type="text/css" href="css/animate.min.css">-->
-<!--<link rel="stylesheet" type="text/css" href="css/will-show.min.css">-->
+<!--<link rel="stylesheet" type="text/css" href="css/will-show.css">-->
+<link rel="stylesheet" type="text/css" href="css/style.css">
 <style>
 
 </style>
@@ -37,7 +38,7 @@
 <!--<script type="text/javascript" charset="utf-8" src="js/AJAX-example.js"> </script>--> 
 <!--<script type="text/javascript" charset="utf-8" src="js/form-check-function.js"></script>-->
 <!--<script type="text/javascript" charset="utf-8" src="js/will-show.js"></script>-->
-
+<script type="text/javascript" charset="utf-8" src="js/all.js"></script>
 </body>
 <script>
 pageView('首頁','index.php');

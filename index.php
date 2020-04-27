@@ -21,7 +21,7 @@
 <?php include'./inc/nav.html'; ?>
 
 
-<section id="C0001">
+<section id="C0001" style="margin-top:70px">
             <div>
                 <a href="#" target="_self">
                     <img data-lazy="./images/C0001/banner_pc_01.png" alt="" class="d-none d-lg-block img-fluid">

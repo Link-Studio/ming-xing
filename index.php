@@ -3,7 +3,7 @@
 <head>
 <?php include'_meta.php'; ?>
 <!--?php include'_schema.php'; ?-->
-<!--?php include'_gtag.php'; ?-->
+<?php include'_gtag.php'; ?>
 
 <!-- CSS -->
 <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
@@ -17,7 +17,7 @@
 </head>
 <body>
 <?php include'./layout/N0001.php'; ?>
-<?php include'_GTM.php'; ?>
+<!--?php include'_GTM.php'; ?-->
 <!-- HTML --> 
 
 

@@ -136,7 +136,7 @@
     left: 2%;
     bottom: 3%;
     width: 96%;
-    color: #ffffff
+    color: #333333
 }
 
 #C0002 article div {
@@ -144,7 +144,7 @@
 }
 
 #C0002 .d-flex a {
-    color: #ffffff;
+    color: #333333;
     text-decoration: none;
 }
 
@@ -165,7 +165,7 @@
         width: 33%;
         min-width: 400px;
         overflow: hidden;
-        color: #ffffff
+        color: #333333
     }
     #C0002 article div {
         font-size: 0.8em;

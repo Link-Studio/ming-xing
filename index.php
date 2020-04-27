@@ -16,7 +16,7 @@
 </style>
 </head>
 <body>
-<?php include'./layout/N0001.php'; ?>
+<?php include'./layout/N0001.html'; ?>
 <!--?php include'_GTM.php'; ?-->
 <!-- HTML --> 
 

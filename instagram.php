@@ -21,8 +21,8 @@
 <body>
     <!-- HTML -->
     <?php include'./inc/nav.html'; ?>
-    <div class="container">
-        <div class="row">
+    <div class="container" style="margin-top:70px">
+        <div class="row card-columns">
             <div class="col-12 col-lg-4">
                 <blockquote class="instagram-media" data-instgrm-captioned
                     data-instgrm-permalink="https://www.instagram.com/p/B_Yi6wDl9UY/?utm_source=ig_embed&amp;utm_campaign=loading"

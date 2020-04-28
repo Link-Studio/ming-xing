@@ -45,6 +45,10 @@
     <!--<script type="text/javascript" charset="utf-8" src="js/form-check-function.js"></script>-->
     <script type="text/javascript" charset="utf-8" src="js/will-show.js"></script>
     <script type="text/javascript" charset="utf-8" src="js/all.js"></script>
+
+
+    <script async src="//www.instagram.com/embed.js"></script>
+
 </body>
 <script>
 pageView('IG', 'instagram.php');
@@ -78,7 +82,9 @@ $(document).ready(function() {
                     // console.log(data);
                     // console.log('串接API成功');
                     console.log(data['html']);
-                    $('.row').append('<div class="col-12 col-lg-3"></div><div class="col-12 col-lg-6">' + data['html'] +
+                    HTML=data['html'].split('<script async src="//www.instagram.com/embed.js"></script>')[0];
+                    console.log(HTML);
+                    $('.row').append('<div class="col-12 col-lg-3"></div><div class="col-12 col-lg-6">' + HTML +
                         '</div><div class="col-12 col-lg-3"></div> ');
                 },
                 error: function() {

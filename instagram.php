@@ -82,10 +82,10 @@ $(document).ready(function() {
                     // console.log(data);
                     // console.log('串接API成功');
                     // console.log(data['html']);
-                    let str=data['html'].split('<script async src="//www.instagram.com/embed.js"></script>');
-                    console.log(str[0]);
-                    $('.row').append('<div class="col-12 col-lg-3"></div><div class="col-12 col-lg-6">' + str[0] +
-                        '</div><div class="col-12 col-lg-3"></div> ');
+                    let str=data['html'].split('script');
+                    console.log(str);
+                    // $('.row').append('<div class="col-12 col-lg-3"></div><div class="col-12 col-lg-6">' + str[0] +
+                    //     '</div><div class="col-12 col-lg-3"></div> ');
                 },
                 error: function() {
                     console.log('串接API失敗');

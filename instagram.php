@@ -21,6 +21,9 @@
 <body>
     <!-- HTML -->
     <?php include'./inc/nav.html'; ?>
+    <div class="card-columns">
+
+    </div>
 
 
 
@@ -46,7 +49,11 @@ pageView('IG', 'instagram.php');
 
 $(document).ready(function() {
     $.getJSON("instagram.json", function(data) {
-        console.log(data['instagram'][8]['key']);
+        //console.log(data);
+        //console.log(data['instagram'][8]['key']);
+        for(var i=0;i++;i<data['instagram'].lenght()){
+         console.log(data['instagram'][i]['key']);
+        }
     });
 
 });

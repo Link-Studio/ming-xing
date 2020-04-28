@@ -45,8 +45,8 @@ pageView('IG', 'instagram.php');
 
 
 $(document).ready(function() {
-    $.getJSON("instagram.json", function(json) {
-        console.log(json);
+    $.getJSON("instagram.json", function(data) {
+        console.log(data['instagram'][8]['key']);
     });
 
 });

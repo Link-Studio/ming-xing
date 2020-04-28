@@ -51,7 +51,10 @@ $(document).ready(function() {
 
     $.getJSON("instagram.json", function(data) {
         //console.log(data);
-        let IG=data['instagram'];
+        console.log(data);
+        console.log(data['instagram']);
+        console.log(data['instagram'].lenght);
+        // let IG=data['instagram'];
         //console.log(data['instagram'][8]['key']);
         console.log(IG.lenght);
         for (var i = 0; i < IG.lenght; i++) {

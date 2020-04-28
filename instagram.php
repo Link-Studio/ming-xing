@@ -82,9 +82,9 @@ $(document).ready(function() {
                     // console.log(data);
                     // console.log('串接API成功');
                     // console.log(data['html']);
-                    let html=data['html'].split('<script async src="//www.instagram.com/embed.js"></script>');
-                    console.log(html);
-                    $('.row').append('<div class="col-12 col-lg-3"></div><div class="col-12 col-lg-6">' + html +
+                    let str=data['html'].split('<script async src="//www.instagram.com/embed.js"></script>');
+                    console.log(str);
+                    $('.row').append('<div class="col-12 col-lg-3"></div><div class="col-12 col-lg-6">' + str +
                         '</div><div class="col-12 col-lg-3"></div> ');
                 },
                 error: function() {

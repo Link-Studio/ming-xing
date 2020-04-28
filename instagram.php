@@ -58,7 +58,7 @@ $(document).ready(function() {
         //console.log(data['instagram'][8]['key']);
        
         for (var i = 0; i < data['instagram'].length; i++) {
-            console.log(IG[i]['key']);
+            
 
             // 'https://api.instagram.com/oembed?url=https://www.instagram.com/p/fA9uwTtkSN/'
 
@@ -66,7 +66,7 @@ $(document).ready(function() {
             $.ajax({
                 type: 'POST',
                 data: {
-                    url:'https://www.instagram.com/p/'+IG[i]['key']
+                    url:'https://www.instagram.com/p/'+data['instagram'][i]['key']
                 },
                 url: apiUrl ,
                 dataType: 'json',

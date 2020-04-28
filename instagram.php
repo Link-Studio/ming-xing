@@ -21,7 +21,10 @@
 <body>
     <!-- HTML -->
     <?php include'./inc/nav.html'; ?>
-    <div class="card-columns" style="margin-top:80px">
+    <div class="container" style="margin-top:80px">
+        <div class="row">
+
+        </div>
 
     </div>
 
@@ -50,38 +53,41 @@ pageView('IG', 'instagram.php');
 $(document).ready(function() {
 
     $.getJSON("instagram.json", function(data) {
-      
+
         // console.log(data);
         // console.log(data['instagram']);
         // console.log(data['instagram'].length);
-  
-       
-        for (var i = 0; i < data['instagram'].length; i++) {
-            
+
+
+        // for (var i = 0; i < data['instagram'].length; i++) {
+        for (var i = 0; i < 5; i++) {
+
 
             // 'https://api.instagram.com/oembed?url=https://www.instagram.com/p/fA9uwTtkSN/'
             // console.log(data['instagram'][i]['key']);
-            var apiUrl = 'https://api.instagram.com/oembed?url=https://www.instagram.com/p/'+data['instagram'][i]['key'];
+            var apiUrl = 'https://api.instagram.com/oembed?url=https://www.instagram.com/p/' + data[
+                'instagram'][i]['key'];
             $.ajax({
                 type: 'POST',
                 data: {},
-                url: apiUrl ,
+                url: apiUrl,
                 dataType: 'json',
                 async: false,
                 beforeSend: function() {
                     // console.log('串接API中');
                 },
                 success: function(data) {
-                    console.log(data);
+                    // console.log(data);
                     // console.log('串接API成功');
                     // console.log(data['html']);
-                    // $('.card-columns').append('<div class="card">'+data['html']+'</div> ');
+                    $('.row').append('<div class="col-12 col-lg-3"></div><div class="col-12 col-lg-6">' + data['html'] +
+                        '</div><div class="col-12 col-lg-3"></div> ');
                 },
                 error: function() {
                     console.log('串接API失敗');
                 },
                 complete: function() {
-                    console.log('完成串接工作(不論失敗或成功)');
+                    //console.log('完成串接工作(不論失敗或成功)');
                 }
             });
 

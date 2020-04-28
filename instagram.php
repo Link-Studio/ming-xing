@@ -50,18 +50,17 @@ pageView('IG', 'instagram.php');
 $(document).ready(function() {
 
     $.getJSON("instagram.json", function(data) {
-        //console.log(data);
-        console.log(data);
-        console.log(data['instagram']);
-        console.log(data['instagram'].length);
-        // let IG=data['instagram'];
-        //console.log(data['instagram'][8]['key']);
+      
+        // console.log(data);
+        // console.log(data['instagram']);
+        // console.log(data['instagram'].length);
+  
        
         for (var i = 0; i < data['instagram'].length; i++) {
             
 
             // 'https://api.instagram.com/oembed?url=https://www.instagram.com/p/fA9uwTtkSN/'
-            console.log(data['instagram'][i]['key']);
+            // console.log(data['instagram'][i]['key']);
             var apiUrl = 'https://api.instagram.com/oembed?url=https://www.instagram.com/p/'+data['instagram'][i]['key'];
             $.ajax({
                 type: 'POST',
@@ -70,11 +69,12 @@ $(document).ready(function() {
                 dataType: 'json',
                 async: false,
                 beforeSend: function() {
-                    console.log('串接API中');
+                    // console.log('串接API中');
                 },
                 success: function(data) {
-                    console.log('串接API成功');
-                    console.log(data['html']);
+                    // console.log('串接API成功');
+                    // console.log(data['html']);
+                    $('.card-columns').appand('<div class="card">'+data['html']+'</div> ')
                 },
                 error: function() {
                     console.log('串接API失敗');

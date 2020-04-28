@@ -22,7 +22,7 @@
     <!-- HTML -->
     <?php include'./inc/nav.html'; ?>
 
-    <div class="card-columns" style="margin-top:70px">
+    <div class="card-columns" style="margin-top:80px">
         <div class="card">
             <blockquote class="instagram-media" data-instgrm-captioned
                 data-instgrm-permalink="https://www.instagram.com/p/B_Yi6wDl9UY/?utm_source=ig_embed&amp;utm_campaign=loading"

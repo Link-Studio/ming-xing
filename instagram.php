@@ -74,7 +74,7 @@ $(document).ready(function() {
                 success: function(data) {
                     // console.log('串接API成功');
                     // console.log(data['html']);
-                    $('.card-columns').appand('<div class="card">'+data['html']+'</div> ')
+                    $('.card-columns').append('<div class="card">'+data['html']+'</div> ')
                 },
                 error: function() {
                     console.log('串接API失敗');

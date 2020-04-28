@@ -61,13 +61,11 @@ $(document).ready(function() {
             
 
             // 'https://api.instagram.com/oembed?url=https://www.instagram.com/p/fA9uwTtkSN/'
-
-            var apiUrl = 'https://api.instagram.com/oembed/'
+            console.log(data['instagram'][i]['key']);
+            var apiUrl = 'https://api.instagram.com/oembed?url=https://www.instagram.com/p/'+data['instagram'][i]['key'];
             $.ajax({
                 type: 'POST',
-                data: {
-                    url:'https://www.instagram.com/p/'+data['instagram'][i]['key']
-                },
+                data: {},
                 url: apiUrl ,
                 dataType: 'json',
                 async: false,

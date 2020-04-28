@@ -60,11 +60,8 @@ $(document).ready(function() {
         // console.log(data['instagram']);
         // console.log(data['instagram'].length);
 
-
         // for (var i = 0; i < data['instagram'].length; i++) {
         for (var i = 0; i < 2; i++) {
-
-
             // 'https://api.instagram.com/oembed?url=https://www.instagram.com/p/fA9uwTtkSN/'
             // console.log(data['instagram'][i]['key']);
             var apiUrl = 'https://api.instagram.com/oembed?url=https://www.instagram.com/p/' + data[
@@ -96,14 +93,11 @@ $(document).ready(function() {
             });
 
         }
-
-
-
-
-
     });
+
+    
     $(window).scroll(function() {
-        console.log('scrollHeight:'+ document.body.scrollHeight);
+        console.log('screenHeight:'+ screen.height);
         console.log('clientHeight:'+ document.body.clientHeight);
         console.log('scrollTop:'+ document.documentElement.scrollTop);
 

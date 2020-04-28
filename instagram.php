@@ -52,19 +52,16 @@
 pageView('IG', 'instagram.php');
 
 
+
 $(document).ready(function() {
 
-    $.getJSON("instagram.json", function(data) {
 
-        // console.log(data);
-        // console.log(data['instagram']);
-        // console.log(data['instagram'].length);
-
-        // for (var i = 0; i < data['instagram'].length; i++) {
-        for (var i = 0; i < 2; i++) {
-            // 'https://api.instagram.com/oembed?url=https://www.instagram.com/p/fA9uwTtkSN/'
-            // console.log(data['instagram'][i]['key']);
-            var apiUrl = 'https://api.instagram.com/oembed?url=https://www.instagram.com/p/' + data[
+    function getIGData(i) {
+        $.getJSON("instagram.json", function(data) {
+            // console.log(data);
+            // console.log(data['instagram']);
+            // console.log(data['instagram'].length);
+            let apiUrl = 'https://api.instagram.com/oembed?url=https://www.instagram.com/p/' + data[
                 'instagram'][i]['key'];
             $.ajax({
                 type: 'POST',
@@ -91,15 +88,28 @@ $(document).ready(function() {
                     //console.log('完成串接工作(不論失敗或成功)');
                 }
             });
+        });
+    }
 
-        }
-    });
 
-    
+
+    getIGData(0);
+    getIGData(1);
+
+
+    var j = 1;
     $(window).scroll(function() {
-        console.log('screenHeight:'+ screen.height);
-        console.log('clientHeight:'+ document.body.clientHeight);
-        console.log('scrollTop:'+ document.documentElement.scrollTop);
+        let SH = screen.height;
+        let CH = document.body.clientHeight;
+        let ST = document.documentElement.scrollTop;
+        // console.log('screenHeight:'+ screen.height);
+        // console.log('clientHeight:'+ document.body.clientHeight);
+        // console.log('scrollTop:'+ document.documentElement.scrollTop);
+
+        if (SH + ST >= CH) {
+            j = j + 1;
+            getIGData(j);
+        }
 
     });
 

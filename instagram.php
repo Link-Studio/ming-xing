@@ -104,7 +104,9 @@ $(document).ready(function() {
     });
     $(window).scroll(function() {
         console.log('scrollHeight:'+ document.body.scrollHeight);
-        console.log('scrollTop:'+ window.scrollTop);
+        console.log('clientHeight:'+ document.body.clientHeight);
+        console.log('scrollTop:'+ document.documentElement.scrollTop);
+
     });
 
 });

@@ -50,11 +50,12 @@ pageView('IG', 'instagram.php');
 $(document).ready(function() {
 
     $.getJSON("instagram.json", function(data) {
-        console.log(data);
+        //console.log(data);
+        let IG=data['instagram'];
         //console.log(data['instagram'][8]['key']);
-        console.log(data['instagram'].lenght);
-        for (var i = 0; i < data['instagram'].lenght; i++) {
-            console.log(data['instagram'][i]['key']);
+        console.log(IG.lenght);
+        for (var i = 0; i < IG.lenght; i++) {
+            console.log(IG[i]['key']);
 
             // 'https://api.instagram.com/oembed?url=https://www.instagram.com/p/fA9uwTtkSN/'
 
@@ -62,7 +63,7 @@ $(document).ready(function() {
             $.ajax({
                 type: 'POST',
                 data: {
-                    url:'https://www.instagram.com/p/'+data['instagram'][i]['key']
+                    url:'https://www.instagram.com/p/'+IG[i]['key']
                 },
                 url: apiUrl ,
                 dataType: 'json',

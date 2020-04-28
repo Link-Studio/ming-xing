@@ -21,7 +21,7 @@
 <body>
     <!-- HTML -->
     <?php include'./inc/nav.html'; ?>
-    <div class="card-columns">
+    <div class="card-columns" style="margin-top:80px">
 
     </div>
 
@@ -48,13 +48,42 @@ pageView('IG', 'instagram.php');
 
 
 $(document).ready(function() {
+
     $.getJSON("instagram.json", function(data) {
-        //console.log(data);
+        console.log(data);
         //console.log(data['instagram'][8]['key']);
-        console.log(data['instagram'].lenght());
-        for (var i = 0; i < data['instagram'].lenght(); i++) {
+        console.log(data['instagram'].lenght);
+        for (var i = 0; i < data['instagram'].lenght; i++) {
             console.log(data['instagram'][i]['key']);
+
+            // 'https://api.instagram.com/oembed?url=https://www.instagram.com/p/fA9uwTtkSN/'
+
+            var apiUrl = 'https://api.instagram.com/oembed?'
+            $.ajax({
+                type: 'POST',
+                data: {
+                    url:'https://www.instagram.com/p/'+data['instagram'][i]['key']
+                },
+                url: apiUrl ,
+                dataType: 'json',
+                async: false,
+                beforeSend: function() {
+                    console.log('串接API中');
+                },
+                success: function(data) {
+                    console.log('串接API成功');
+                    console.log(data['html']);
+                },
+                error: function() {
+                    console.log('串接API失敗');
+                },
+                complete: function() {
+                    console.log('完成串接工作(不論失敗或成功)');
+                }
+            });
+
         }
+
     });
 
 });

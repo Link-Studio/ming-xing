@@ -45,7 +45,7 @@
     <!--<script type="text/javascript" charset="utf-8" src="js/form-check-function.js"></script>-->
     <script type="text/javascript" charset="utf-8" src="js/will-show.js"></script>
     <script type="text/javascript" charset="utf-8" src="js/all.js"></script>
-    <script  async src="//www.instagram.com/embed.js"></script>
+    
    
 </body>
 <script>
@@ -84,8 +84,7 @@ $(document).ready(function() {
                     // console.log(data['html']);
                     let str=data['html'].split('<script');
                     console.log(str[0]);
-                    // $('.row').append('<div class="col-12 col-lg-3"></div><div class="col-12 col-lg-6">' + str[0] +
-                    //     '</div><div class="col-12 col-lg-3"></div> ');
+                    $('.row').append('<div class="col-12 col-lg-3"></div><div class="col-12 col-lg-6">'+str[0]+'</div><div class="col-12 col-lg-3"></div> ');
                 },
                 error: function() {
                     console.log('串接API失敗');
@@ -101,5 +100,5 @@ $(document).ready(function() {
 
 });
 </script>
-
+<script  async src="//www.instagram.com/embed.js"></script>
 </html>

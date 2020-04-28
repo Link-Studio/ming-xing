@@ -45,8 +45,8 @@
     <!--<script type="text/javascript" charset="utf-8" src="js/form-check-function.js"></script>-->
     <script type="text/javascript" charset="utf-8" src="js/will-show.js"></script>
     <script type="text/javascript" charset="utf-8" src="js/all.js"></script>
-    
-   
+
+
 </body>
 <script>
 pageView('IG', 'instagram.php');
@@ -62,7 +62,7 @@ $(document).ready(function() {
 
 
         // for (var i = 0; i < data['instagram'].length; i++) {
-        for (var i = 0; i < 3; i++) {
+        for (var i = 0; i < 2; i++) {
 
 
             // 'https://api.instagram.com/oembed?url=https://www.instagram.com/p/fA9uwTtkSN/'
@@ -82,8 +82,10 @@ $(document).ready(function() {
                     console.log(data);
                     // console.log('串接API成功');
                     // console.log(data['html']);
-                 
-                    // $('.row').append('<div class="col-12 col-lg-3"></div><div class="col-12 col-lg-6">'+str[0]+'</div><div class="col-12 col-lg-3"></div> ');
+
+                    $('.row').append(
+                        '<div class="col-12 col-lg-3"></div><div class="col-12 col-lg-6">' +
+                        data['html'] + '</div><div class="col-12 col-lg-3"></div> ');
                 },
                 error: function() {
                     console.log('串接API失敗');
@@ -95,6 +97,14 @@ $(document).ready(function() {
 
         }
 
+
+
+
+
+    });
+    $(window).scroll(function() {
+        console.log('scrollHeight:'+ document.body.scrollHeight);
+        console.log('scrollTop:'+ document.body.scrollTop;)
     });
 
 });

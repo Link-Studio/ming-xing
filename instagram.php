@@ -46,9 +46,7 @@
     <script type="text/javascript" charset="utf-8" src="js/will-show.js"></script>
     <script type="text/javascript" charset="utf-8" src="js/all.js"></script>
 
-
     <script async src="//www.instagram.com/embed.js"></script>
-
 </body>
 <script>
 pageView('IG', 'instagram.php');
@@ -65,6 +63,8 @@ $(document).ready(function() {
 
         // for (var i = 0; i < data['instagram'].length; i++) {
         for (var i = 0; i < 3; i++) {
+
+
             // 'https://api.instagram.com/oembed?url=https://www.instagram.com/p/fA9uwTtkSN/'
             // console.log(data['instagram'][i]['key']);
             var apiUrl = 'https://api.instagram.com/oembed?url=https://www.instagram.com/p/' + data[
@@ -81,10 +81,10 @@ $(document).ready(function() {
                 success: function(data) {
                     // console.log(data);
                     // console.log('串接API成功');
-                    console.log(data['html']);
-                    HTML=data['html'].split('<script async src="//www.instagram.com/embed.js"></script>')[0];
-                    console.log(HTML);
-                    $('.row').append('<div class="col-12 col-lg-3"></div><div class="col-12 col-lg-6">' + HTML +
+                    // console.log(data['html']);
+                    let html=data['html'].split('<script async src="//www.instagram.com/embed.js"></script>');
+                    console.log(html);
+                    $('.row').append('<div class="col-12 col-lg-3"></div><div class="col-12 col-lg-6">' + html +
                         '</div><div class="col-12 col-lg-3"></div> ');
                 },
                 error: function() {

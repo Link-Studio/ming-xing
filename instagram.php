@@ -60,9 +60,7 @@ $(document).ready(function() {
 
 
         // for (var i = 0; i < data['instagram'].length; i++) {
-        for (var i = 0; i < 5; i++) {
-
-
+        for (var i = 0; i < 3; i++) {
             // 'https://api.instagram.com/oembed?url=https://www.instagram.com/p/fA9uwTtkSN/'
             // console.log(data['instagram'][i]['key']);
             var apiUrl = 'https://api.instagram.com/oembed?url=https://www.instagram.com/p/' + data[
@@ -79,7 +77,7 @@ $(document).ready(function() {
                 success: function(data) {
                     // console.log(data);
                     // console.log('串接API成功');
-                    // console.log(data['html']);
+                    console.log(data['html']);
                     $('.row').append('<div class="col-12 col-lg-3"></div><div class="col-12 col-lg-6">' + data['html'] +
                         '</div><div class="col-12 col-lg-3"></div> ');
                 },

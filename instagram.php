@@ -58,7 +58,7 @@ $(document).ready(function() {
 
             // 'https://api.instagram.com/oembed?url=https://www.instagram.com/p/fA9uwTtkSN/'
 
-            var apiUrl = 'https://api.instagram.com/oembed?'
+            var apiUrl = 'https://api.instagram.com/oembed/'
             $.ajax({
                 type: 'POST',
                 data: {

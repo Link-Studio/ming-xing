@@ -69,8 +69,13 @@ $(document).ready(function() {
             // console.log(data);
             // console.log(data['instagram']);
             // console.log(data['instagram'].length);
+            let omitscript=true;
+            if(i!==0){
+                omitscript=false;
+            }
             let apiUrl = 'https://api.instagram.com/oembed?url=https://www.instagram.com/p/' + data[
-                'instagram'][i]['key']+'&omitscript=true';
+                'instagram'][i]['key']+'&omitscript='+omitscript;
+
             $.ajax({
                 type: 'POST',
                 data: {},
@@ -134,6 +139,6 @@ $(document).ready(function() {
 
 });
 </script>
- <script async src="https://www.instagram.com/embed.js"></script>
+
 </html>
 

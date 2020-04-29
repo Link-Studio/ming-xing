@@ -111,6 +111,7 @@ $(document).ready(function() {
         getIGData(i);
     }
 
+
     // getIGData(0);
     // getIGData(1);
 
@@ -133,6 +134,6 @@ $(document).ready(function() {
 
 });
 </script>
-
+ <script async src="https://www.instagram.com/embed.js"></script>
 </html>
 

@@ -23,7 +23,15 @@
     <?php include'./inc/nav.html'; ?>
     <div class="container" style="margin-top:80px">
         <div class="row">
-
+            <!-- <div class="card col-12 col-lg-3">
+                <img src="..." class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                        card's content.</p>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+            </div> -->
         </div>
 
     </div>
@@ -77,9 +85,16 @@ $(document).ready(function() {
                     // console.log('串接API成功');
                     // console.log(data['html']);
 
+                    // $('.row').append(
+                    //     '<div class="col-12 col-lg-3"></div><div class="col-12 col-lg-6">' +
+                    //     data['html'] + '</div><div class="col-12 col-lg-3"></div> ');
                     $('.row').append(
-                        '<div class="col-12 col-lg-3"></div><div class="col-12 col-lg-6">' +
-                        data['html'] + '</div><div class="col-12 col-lg-3"></div> ');
+                        '<div class="card col-12 col-lg-3"> <img src="' + data[
+                            'thumbnail_url'] +
+                        '" class="card-img-top" alt="..."><div class="card-body"><p class="card-text">' +
+                        data['title'] + '</p><a href="' + data['author_url'] +
+                        '" class="btn btn-primary">到 Instagram 查看更多內容</a></div></div>'
+                    );
                 },
                 error: function() {
                     console.log('串接API失敗');

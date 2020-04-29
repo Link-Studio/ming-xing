@@ -112,7 +112,7 @@ $(document).ready(function() {
         });
     }
 
-    for (i = 0; i < 2; i++) {
+    for (i = 0; i < 4; i++) {
         getIGData(i);
     }
 
@@ -121,21 +121,21 @@ $(document).ready(function() {
     // getIGData(1);
 
 
-    var j = 1;
-    $(window).scroll(function() {
-        let SH = screen.height;
-        let CH = document.body.clientHeight;
-        let ST = document.documentElement.scrollTop;
-        // console.log('screenHeight:'+ screen.height);
-        // console.log('clientHeight:'+ document.body.clientHeight);
-        // console.log('scrollTop:'+ document.documentElement.scrollTop);
+    // var j = 1;
+    // $(window).scroll(function() {
+    //     let SH = screen.height;
+    //     let CH = document.body.clientHeight;
+    //     let ST = document.documentElement.scrollTop;
+    //     // console.log('screenHeight:'+ screen.height);
+    //     // console.log('clientHeight:'+ document.body.clientHeight);
+    //     // console.log('scrollTop:'+ document.documentElement.scrollTop);
 
-        if (SH + ST >= CH) {
-            j = j + 1;
-            getIGData(j);
-        }
+    //     if (SH + ST >= CH) {
+    //         j = j + 1;
+    //         getIGData(j);
+    //     }
 
-    });
+    // });
 
 });
 </script>

@@ -89,11 +89,10 @@ $(document).ready(function() {
                     //     '<div class="col-12 col-lg-3"></div><div class="col-12 col-lg-6">' +
                     //     data['html'] + '</div><div class="col-12 col-lg-3"></div> ');
                     $('.row').append(
-                        '<div class="card col-12 col-lg-3"> <img src="' + data[
-                            'thumbnail_url'] +
+                        '<div class="card col-12 col-lg-3"> <img src="' + data['thumbnail_url'] +
                         '" class="card-img-top" alt="..."><div class="card-body"><p class="card-text">' +
-                        data['title'] + '</p><a href="https://instagram.com/p/'+ data[
-                'instagram'][i]['key']+'/media/?size=m" class="btn btn-primary" target="_blank">到 Instagram 查看更多內容</a></div></div>'
+                        data['title'] + '</p><a href="' + data['author_url'] +
+                        '" class="btn btn-primary" target="_blank">到 Instagram 查看更多內容</a></div></div>'
                     );
                 },
                 error: function() {

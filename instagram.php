@@ -70,7 +70,7 @@ $(document).ready(function() {
             // console.log(data['instagram']);
             // console.log(data['instagram'].length);
             let omitscript=true;
-            if(i!==0){
+            if(i==0){
                 omitscript=false;
             }
             let apiUrl = 'https://api.instagram.com/oembed?url=https://www.instagram.com/p/' + data[

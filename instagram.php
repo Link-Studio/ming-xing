@@ -70,7 +70,7 @@ $(document).ready(function() {
             // console.log(data['instagram']);
             // console.log(data['instagram'].length);
             let apiUrl = 'https://api.instagram.com/oembed?url=https://www.instagram.com/p/' + data[
-                'instagram'][i]['key'];
+                'instagram'][i]['key']+'&omitscript=true';
             $.ajax({
                 type: 'POST',
                 data: {},
@@ -83,17 +83,19 @@ $(document).ready(function() {
                 success: function(data) {
                     console.log(data);
                     // console.log('串接API成功');
-                    // console.log(data['html']);
+                    console.log(data['html']);
 
                     // $('.row').append(
                     //     '<div class="col-12 col-lg-3"></div><div class="col-12 col-lg-6">' +
                     //     data['html'] + '</div><div class="col-12 col-lg-3"></div> ');
-                    $('.row').append(
-                        '<div class="card col-12 col-lg-3"> <img src="' + data['thumbnail_url'] +
-                        '" class="card-img-top" alt="..."><div class="card-body"><p class="card-text">' +
-                        data['title'] + '</p><a href="' + data['author_url'] +
-                        '" class="btn btn-primary" target="_blank">到 Instagram 查看更多內容</a></div></div>'
-                    );
+
+                    // $('.row').append(
+                    //     '<div class="card col-12 col-lg-3"> <img src="' + data[
+                    //         'thumbnail_url'] +
+                    //     '" class="card-img-top" alt="..."><div class="card-body"><p class="card-text">' +
+                    //     data['title'] + '</p><a href="' + data['author_url'] +
+                    //     '" class="btn btn-primary" target="_blank">到 Instagram 查看更多內容</a></div></div>'
+                    // );
                 },
                 error: function() {
                     console.log('串接API失敗');
@@ -133,3 +135,4 @@ $(document).ready(function() {
 </script>
 
 </html>
+

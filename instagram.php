@@ -85,9 +85,9 @@ $(document).ready(function() {
                     // console.log('串接API成功');
                     console.log(data['html']);
 
-                    // $('.row').append(
-                    //     '<div class="col-12 col-lg-3"></div><div class="col-12 col-lg-6">' +
-                    //     data['html'] + '</div><div class="col-12 col-lg-3"></div> ');
+                    $('.row').append(
+                        '<div class="col-12 col-lg-3"></div><div class="col-12 col-lg-6">' +
+                        data['html'] + '</div><div class="col-12 col-lg-3"></div> ');
 
                     // $('.row').append(
                     //     '<div class="card col-12 col-lg-3"> <img src="' + data[
